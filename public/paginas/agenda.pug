@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    //- <link rel="stylesheet" href="../css/fila.css">
+    style 
+        include ../css/fila.css
+    script  
+        include ../script_front/gerar_iframe_ficha.js
+        include ../script_front/arrastar_elementos.js
+        include ../script_front/ocultar.js
+        include ../script_front/linha.js
+        include ../script_front/imagensEstatica.js
+
+    <title>Fila</title>
+</head>
+<body>
+
+    <div id="opcoes">
+        <label for="menu_adiciona" id="adiciona">
+            <div><img src="" alt=""></div>
+            <div>Adiciona</div>
+        </label>
+        <input type="checkbox" id="menu_adiciona">
+        <div id="mostra">
+            <div>
+                <img src="" alt="">
+                <a href="" onclick="open('/cadastro','','status=no,Width=500,Height=500');">Cadastrar Militar</a>
+
+            </div>
+            <div >
+                <img src="" alt="">
+                <span onclick='gerarLinha()'> Adicionar linha</span>
+            </div>
+            
+        </div>
+        <div for="" id="remove" ondragover="onDragOver(event);" ondrop="onDropRemove(event);">
+            <div><img src="" alt=""></div>
+            <div>Remove</div>
+ 
+        </div>
+        
+    </div>
+
+    
+   
+    
+    
+    <div class="example-parent" >
+        
+        <div class="example-dropzone" id='dropZone' ondragover="onDragOver(event);" ondrop="onDrop(event);">
+            <h1>Lista</h1>
+            <div class="linhas">
+                span 1
+            </div>
+            <div class="linhas">
+                span 2
+            </div>
+            <div class="linhas">
+                span 3
+            </div>
+            <div class="linhas">
+                span 4
+            </div>
+            <div class="linhas">
+                span 5
+            </div>
+            <div class="linhas">
+                span 6
+            </div>
+            <div class="linhas">
+                span 7
+            </div>
+            <div class="linhas">
+                span 8
+            </div>
+            <div class="linhas">
+                span 9
+            </div>
+            <div class="linhas">
+                span 10
+            </div>
+            <div class="linhas">
+                span 11
+            </div>
+            <div class="linhas">
+                span 12
+            </div>
+            
+            
+        </div>
+       
+       
+        <input type="checkbox" id="barra_lateral">
+        <label for="barra_lateral" id="barra_participantes">
+            <img src="" id='imagem_seta'alt="">
+        </label>
+        <div class="example-origin" id="origin_01">
+          
+                
+               
+           
+     
+         
+        </div>
+   
+        
+
+        
+    </div>
+    
+      
+    
+
+</body>
+</html>

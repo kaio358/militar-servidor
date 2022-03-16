@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+}
+
+#formulario{
+    text-align: center;
+}
+
+#formulario input{
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 5vh;
+}
+#formulario textarea{
+    font-size: 5vh;
+    width: 60vw;
+}
+#formulario label{
+    font-size: 5vh;
+}
+#formulario button{
+    font-size: 5vh;
+    background-color: rgb(228, 49, 85);
+    color: white;
+    border-color: crimson;
+    border-radius: 9px;
+    padding: 5px;
+    
+}
+
+
+

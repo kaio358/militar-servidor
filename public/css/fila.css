@@ -1,0 +1,158 @@
+a{
+    text-decoration: none;
+}
+
+.example-parent {
+   
+    color: black;
+   
+    font-family: sans-serif;
+    font-weight: bold;
+}
+  
+  .example-origin {
+ 
+    background-color: white;
+    position: fixed;
+    bottom: 20%;
+    right: -30%;
+    padding: 10px;
+    box-shadow: 1px 2px 3px black;
+    border: 10%;
+   
+    transition: all 0.5s;
+  }
+  
+  .example-draggable {
+    font-size: 3vh;
+    color: white;
+    background-color: #890bff;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 15vw;
+    
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  
+  .example-dropzone {
+    border: 1px solid rgb(37, 37, 37);
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    
+  }
+
+    .example-dropzone div.linhas{
+        border-bottom: 1px solid black ;
+        padding-top: 25px;
+       
+    }
+
+
+
+/* menu  */
+
+#opcoes{
+    display: flex;
+    position: fixed;
+    right: 50px;
+    top: 20px;
+
+}
+#opcoes #adiciona{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    color: #09af09;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #09af09 ;
+    border-radius: 15px;
+    font-size: 21px;
+    text-align: center;
+
+   
+}
+#opcoes #remove{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    color: #ff1100;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #ff1100 ;
+    border-radius: 15px;
+    font-size: 21px;
+    text-align: center;
+
+   
+}
+#menu_adiciona{
+    display: none;
+}
+#menu_adiciona:checked  ~ #mostra {
+    display:block;
+    position: absolute;
+    margin-top: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 230px;
+    box-shadow: 1px 2px 1px black;
+    padding: 10px;
+    border: 0.54px solid black;
+    border-radius: 5px ;
+    top: 90%;
+}
+#mostra {
+    display:none;
+ }
+
+#mostra div{
+    display: inline-flex;
+    font-size: 18px;
+    margin-top: 5px;
+}
+#mostra div a{
+    
+    color: black;
+}
+
+#barra_participantes{
+    z-index: 2;
+    position: fixed;
+    bottom: 40%;
+    right: 0%;
+    padding: 15px;
+    box-shadow: 0 2px 2px black;
+    border-radius: 50% 0 0 50% ;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#barra_lateral{
+    display: none;
+}
+
+#barra_lateral:checked ~.example-origin{
+ 
+    right: 1%;
+}
+#barra_lateral:checked ~#barra_participantes{
+    right: 19%;
+    
+}
+
+iframe{
+    position: absolute;
+    display: none;
+    top: 20%;
+    right: 20%;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 7%;
+}
+
